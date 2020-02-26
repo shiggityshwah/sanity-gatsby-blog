@@ -9,6 +9,7 @@ import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
+import project from './documents/project'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -28,6 +29,7 @@ export default createSchema({
     // in the studio.
     siteSettings,
     post,
+    project,
     category,
     author,
     mainImage,

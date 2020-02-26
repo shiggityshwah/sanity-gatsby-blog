@@ -6,7 +6,7 @@ import {cn} from '../lib/helpers'
 import styles from './header.module.css'
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
-  <div className={styles.root}>
+  <div style={{  color:"#f5f5f5", backgroundColor: "#525e65" }} className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
         <Link to='/'>{siteTitle}</Link>
@@ -18,6 +18,15 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
 
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
+          <li>
+            <Link to='/archive/'>Projects</Link>
+          </li>
+          <li>
+            <Link to='/archive/'>Blog</Link>
+          </li>
+          <li>
+            <Link to='/archive/'>Contact</Link>
+          </li>
           <li>
             <Link to='/archive/'>Archive</Link>
           </li>
